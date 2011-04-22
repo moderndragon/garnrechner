@@ -1,4 +1,4 @@
-garnrechner is a python script aimed at spinners and knitters. Basically just some proportional math, and I am doing this to learn some python basics (and put them to a fun use). A tool for math-lazy people like me who want to automate calculations and dislike Excel.
+garnrechner is a set of small python scripts aimed at spinners and knitters. Basically just some proportional math, and I am doing this to learn some python basics (and put them to a fun use). A tool for math-lazy people like me who want to automate calculations and dislike Excel.
 
 ## Core features 
 * **yarn length calculator**: It calculates yarn lengths from known weights (if skein a weighs 30g and has a length of x meters, how many meters are in skein b that weighs 110g?) and vice versa. 
