@@ -1,19 +1,21 @@
 #!/usr/bin/python
+# This Python file uses the following encoding: utf-8
+import os, sys 
 
-# Meter pro Knaeuel von Garn a
-la = int(raw_input('Bitte gib an, wieviele Meter auf einem Knaeuel des ersten Garns sind:'))
+# meters per skein of yarn a
+la = int(raw_input("please specify the length of the yarn you want to substitute:"))
 
-# Meter pro Knaeuel von Garn b
-lb = int(raw_input('Bitte gib an, wieviele Meter auf einem Knaeuel des zweiten Garns sind:'))
+# meters per skein of yarn b
+lb = int(raw_input("please specify the length of your yarn:"))
 
-# Anzahl der Knaeuel von Garn a
-x = int(raw_input('Bitte gib an, wieviele Knaeuel des ersten Garns verwendet werden (ganze Zahl):'))
+# number of skeins of yarn a
+x = int(raw_input("please specify the number of skeins given in the pattern (integer):"))
 
-# Gesamtlaenge
+# total length
 ltot = la * x
 
-# benoetigte Knaeuel von Garn b
+# number of necessary skeins of yarn b
 y = x * la // lb + 1
 
-print "Die insgesamt benoetigte Garnlaenge ist", ltot, "Meter."
-print "Du benoetigst", y, "Knaeuel von Garn b."
+print "You need", ltot, "meters of yarn for your project."
+print "You need", y, "skeins of your yarn."
