@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -29,7 +28,7 @@ col1 = raw_input("Please name your first colour:")
 # hc1 = number of holes with colour 1
 hc1 = int(raw_input("How many holes of your pattern are in that colour?"))
 
-# length of skein; use could be simplified if I check if all the skeins are equal via 
+# length of skein; use could be simplified if I check if all the skeins are equal via an additional if statement
 sc1 = int(raw_input("How much yarn is on a skein of this yarn (yards/meters)?"))
 
 # col2 = second colour
@@ -45,14 +44,16 @@ sc2 = int(raw_input("How much yarn is on a skein of this yarn (yards/meters)?"))
 lcol1 = lw * hc1
 
 # number of skeins of col1
+nsk1 = lcol1//sc1 +1
 
 #length of yarn needed for col2
 lcol2 = lw * hc2
 
 # number of skeins of col2
+nsk2 = lcol1//sc1 +1
 
 if ncol == 2:
-	print "You need balls of", col1, "yarn,\nand balls of", col2, "yarn."
+	print "You need", nsk1, "balls of", col1, "yarn\nand", nsk2, "balls of", col2, "yarn."
 
 else:
 	# col3 = third colour.
@@ -68,9 +69,9 @@ else:
 	lcol3 = lw * hc3
 	
 	# number of skeins of col3
+	nsk3 = lcol1//sc1 +1
 	
-	
-	print "You need balls of", col1, "yarn,\n balls of", col2, "yarn\nand balls of", col3, "yarn."
+	print "You need", nsk1, "balls of", col1, "yarn,\n", nsk2, "balls of", col2, "yarn\nand", nsk3, "balls of", col3, "yarn."
 
 print "Your pattern uses", nhtot * lw, unit, "of yarn."
 =======
@@ -114,4 +115,3 @@ else:
 	hc3 = int(raw_input("How many holes of your pattern are in that colour?"))
 	print "You need balls of", col1, "yarn,\n balls of", col2, "yarn\n and balls of", col3, "yarn."
 print "Your pattern uses", nhtot x lw, unit, "of yarn."
->>>>>>> 831f581c0e227f39f7d0c1a9a925f42855fc108a
