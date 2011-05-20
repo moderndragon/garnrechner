@@ -10,7 +10,7 @@ unit = raw_input("Which unit do you use?\nPlease type m for meters or f for feet
 nh = int(raw_input("How many holes per card do you use?"))
 
 # number of cards
-nc = int(raw_input("How many cards do you use?")
+nc = int(raw_input("How many cards do you use?"))
 
 # nhtot = number of holes in total
 nhtot = nc * nh
