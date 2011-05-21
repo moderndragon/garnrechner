@@ -10,7 +10,7 @@ unit = raw_input("Which unit do you use?\nPlease type m for meters or f for feet
 nh = int(raw_input("How many holes per card do you use?"))
 
 # number of cards
-nc = raw_input("How many cards do you use?")
+nc = int(raw_input("How many cards do you use?"))
 
 # nhtot = number of holes in total
 nhtot = nc * nh
@@ -73,4 +73,4 @@ else:
 	
 	print "You need", nsk1, "balls of", col1, "yarn,\n", nsk2, "balls of", col2, "yarn\nand", nsk3, "balls of", col3, "yarn."
 
-# print "Your pattern uses", nhtot * lw, unit, "of yarn."
+print "Your pattern uses", nhtot * lw, unit, "of yarn."
