@@ -10,13 +10,13 @@ unit = raw_input("Which unit do you use?\nPlease type m for meters or f for feet
 nh = int(raw_input("How many holes per card do you use?"))
 
 # number of cards
-nc = int(raw_input("How many cards do you use?"))
+nc = raw_input("How many cards do you use?")
 
 # nhtot = number of holes in total
 nhtot = nc * nh
 
 # length of warp; maybe to be taken over from wlc.py
-lw = int(raw_input("How long is your warp?"))
+lw = float(raw_input("How long is your warp?"))
 
 # ncol = number of colours
 # The maximal number of colours for cardweaving is usually 3.
@@ -73,4 +73,4 @@ else:
 	
 	print "You need", nsk1, "balls of", col1, "yarn,\n", nsk2, "balls of", col2, "yarn\nand", nsk3, "balls of", col3, "yarn."
 
-print "Your pattern uses", nhtot * lw, unit, "of yarn."
+# print "Your pattern uses", nhtot * lw, unit, "of yarn."
