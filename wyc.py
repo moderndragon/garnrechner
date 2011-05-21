@@ -50,7 +50,7 @@ nsk1 = lcol1//sc1 +1
 lcol2 = lw * hc2
 
 # number of skeins of col2
-nsk2 = lcol1//sc1 +1
+nsk2 = lcol2//sc2 +1
 
 if ncol == 2:
 	print "You need", nsk1, "balls of", col1, "yarn\nand", nsk2, "balls of", col2, "yarn."
@@ -69,7 +69,7 @@ else:
 	lcol3 = lw * hc3
 	
 	# number of skeins of col3
-	nsk3 = lcol1//sc1 +1
+	nsk3 = lcol3//sc3 +1
 	
 	print "You need", nsk1, "balls of", col1, "yarn,\n", nsk2, "balls of", col2, "yarn\nand", nsk3, "balls of", col3, "yarn."
 
